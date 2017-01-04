@@ -29,17 +29,17 @@ class Lesson
     $this->status = $status;
   }
 
-  public function teacherId()
+  public function teacherId(): TeacherId
   {
     return $this->teacherId;
   }
 
-  public function time()
+  public function time(): int
   {
     return $this->time;
   }
 
-  public function status()
+  public function status(): Status
   {
     return $this->status;
   }

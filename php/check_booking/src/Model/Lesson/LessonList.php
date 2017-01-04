@@ -17,7 +17,7 @@ class LessonList implements IteratorAggregate
 
   private $list = array();
 
-  public static function from(array $list)
+  public static function from(array $list): LessonList
   {
     $expectedListSize = (self::MAX_DAY_INDEX + 1) * self::NUMBER_OF_LESSONS_PER_DAY;
     if (count($list) !== $expectedListSize) {
@@ -42,7 +42,7 @@ class LessonList implements IteratorAggregate
   /**
    * Split the list into other LessonList by day index.
    */
-  public function splitByDayIndex($index)
+  public function splitByDayIndex($index): LessonList
   {
     Precondition::require (0 <= $index && $index <= self::MAX_DAY_INDEX,
       "DayIndex must be between 0 and MAX_DAY_INDEX.");
@@ -53,7 +53,7 @@ class LessonList implements IteratorAggregate
     return new LessonList($res);
   }
 
-  function size()
+  function size(): int
   {
     return count($this->list);
   }

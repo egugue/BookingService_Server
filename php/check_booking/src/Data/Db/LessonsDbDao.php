@@ -68,7 +68,7 @@ SQL;
     }
   }
 
-  public function selectByTeacherId(TeacherId $id)
+  public function selectByTeacherId(TeacherId $id): LessonList
   {
     $rows = $this->pdo->query(
       "SELECT time, status FROM {$this->table} WHERE teacher_id = {$id->value()}"); //TODO: select only from today's Data.

@@ -37,7 +37,7 @@ final class Status extends Enum
    */
   const UNASSIGNED = "unassigned";
 
-  public static function from(string $bookingText)
+  public static function from(string $bookingText): Status
   {
     if ($bookingText === "") {
       return self::UNASSIGNED;

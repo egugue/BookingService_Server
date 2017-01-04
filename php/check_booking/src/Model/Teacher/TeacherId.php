@@ -15,14 +15,14 @@ class TeacherId
 
   public function __construct(int $id)
   {
-    Precondition::require($id > 0, "id must be a positive integer").
+    Precondition::require ($id > 0, "id must be a positive integer") .
     $this->id = $id;
   }
 
   /**
    * Retrieve the identifier as int type.
    */
-  public function value()
+  public function value(): int
   {
     return $this->id;
   }

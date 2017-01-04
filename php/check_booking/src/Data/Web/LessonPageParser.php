@@ -18,7 +18,7 @@ use simple_html_dom_node;
 class LessonPageParser
 {
 
-  public function parse(simple_html_dom_node $dom, TeacherId $teacherId)
+  public function parse(simple_html_dom_node $dom, TeacherId $teacherId): LessonList
   {
     $schedulesList = $dom->find(SecretConst::HTML_TEACHER_PAGE_SCHEDULE_LIST_SELECTOR); //TODO: implement to be able to specify a date.
 
