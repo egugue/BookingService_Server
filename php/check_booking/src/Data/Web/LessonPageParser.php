@@ -13,12 +13,12 @@ use Egugue\BookingSerivce\CheckBooking\Model\Lesson\Status;
 use Egugue\BookingSerivce\CheckBooking\Model\Teacher\TeacherId;
 use Egugue\BookingSerivce\CheckBooking\SecretConst;
 use Exception;
-use simple_html_dom_node;
+use simple_html_dom;
 
 class LessonPageParser
 {
 
-  public function parse(simple_html_dom_node $dom, TeacherId $teacherId): LessonList
+  public function parse(simple_html_dom $dom, TeacherId $teacherId): LessonList
   {
     $schedulesList = $dom->find(SecretConst::HTML_TEACHER_PAGE_SCHEDULE_LIST_SELECTOR); //TODO: implement to be able to specify a date.
 

@@ -13,7 +13,7 @@ require_once(dirname(__FILE__) . "/../../php/simple_html_dom.php");
 class HtmlFetcher
 {
 
-  public function fetchBookingPage(TeacherId $id): \simple_html_dom_node
+  public function fetchBookingPage(TeacherId $id): \simple_html_dom
   {
     $url = SecretConst::createTeacherUrl($id);
     return file_get_html($url);
