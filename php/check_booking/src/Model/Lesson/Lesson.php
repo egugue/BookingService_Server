@@ -1,9 +1,9 @@
 <?php
 
-namespace Egugue\BookingSerivce\CheckingService\Model\Lesson;
+namespace Egugue\BookingSerivce\CheckBooking\Model\Lesson;
 
-use Egugue\BookingSerivce\CheckingService\Model\Teacher\TeacherId;
-use Egugue\BookingSerivce\CheckingService\Util\Precondition;
+use Egugue\BookingSerivce\CheckBooking\Model\Teacher\TeacherId;
+use Egugue\BookingSerivce\CheckBooking\Util\Precondition;
 
 require_once __DIR__ . "/../Teacher/TeacherId.php";
 require_once __DIR__ . "/../../Util/Precondition.php";

@@ -1,9 +1,9 @@
 <?php
 
-namespace Egugue\BookingSerivce\CheckingService\Model\Lesson;
+namespace Egugue\BookingSerivce\CheckBooking\Model\Lesson;
 
 use ArrayIterator;
-use Egugue\BookingSerivce\CheckingService\Util\Precondition;
+use Egugue\BookingSerivce\CheckBooking\Util\Precondition;
 use Exception;
 use IteratorAggregate;
 

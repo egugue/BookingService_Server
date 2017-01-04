@@ -1,9 +1,9 @@
 <?php
 
-namespace Egugue\BookingSerivce\CheckingService\Data\Web;
+namespace Egugue\BookingSerivce\CheckBooking\Data\Web;
 
-use Egugue\BookingSerivce\CheckingService\Model\Teacher\TeacherId;
-use Egugue\BookingSerivce\CheckingService\SecretConst;
+use Egugue\BookingSerivce\CheckBooking\Model\Teacher\TeacherId;
+use Egugue\BookingSerivce\CheckBooking\SecretConst;
 
 require_once(dirname(__FILE__) . "/../../php/simple_html_dom.php");
 

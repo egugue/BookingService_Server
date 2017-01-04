@@ -1,17 +1,17 @@
 <?php
 
-namespace Egugue\BookingSerivce\CheckingService\Data\Web;
+namespace Egugue\BookingSerivce\CheckBooking\Data\Web;
 
 require_once __DIR__ . "/../../Model/Teacher/TeacherId.php";
 require_once __DIR__ . "/../../Model/Lesson/Lesson.php";
 require_once __DIR__ . "/../../Model/Lesson/LessonList.php";
 require_once __DIR__ . "/../../Model/Lesson/LessonList.php";
 
-use Egugue\BookingSerivce\CheckingService\Model\Lesson\Lesson;
-use Egugue\BookingSerivce\CheckingService\Model\Lesson\LessonList;
-use Egugue\BookingSerivce\CheckingService\Model\Lesson\Status;
-use Egugue\BookingSerivce\CheckingService\Model\Teacher\TeacherId;
-use Egugue\BookingSerivce\CheckingService\SecretConst;
+use Egugue\BookingSerivce\CheckBooking\Model\Lesson\Lesson;
+use Egugue\BookingSerivce\CheckBooking\Model\Lesson\LessonList;
+use Egugue\BookingSerivce\CheckBooking\Model\Lesson\Status;
+use Egugue\BookingSerivce\CheckBooking\Model\Teacher\TeacherId;
+use Egugue\BookingSerivce\CheckBooking\SecretConst;
 use Exception;
 use simple_html_dom_node;
 

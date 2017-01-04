@@ -1,8 +1,8 @@
 <?php
 
-namespace Egugue\BookingSerivce\CheckingService\Model\Lesson;
+namespace Egugue\BookingSerivce\CheckBooking\Model\Lesson;
 
-use Egugue\BookingSerivce\CheckingService\Model\Teacher\TeacherId;
+use Egugue\BookingSerivce\CheckBooking\Model\Teacher\TeacherId;
 
 class LessonListRepository
 {

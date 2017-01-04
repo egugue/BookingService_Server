@@ -1,6 +1,6 @@
 <?php
 
-namespace Egugue\BookingSerivce\CheckingService\Util;
+namespace Egugue\BookingSerivce\CheckBooking\Util;
 
 /**
  * Providing utility functions related to precondition.
@@ -11,7 +11,8 @@ class Precondition
   /**
    * Throw InvalidArgumentException having the given message if the given condition is false.
    */
-  static function require(bool $condition, string $message) {
+  static function require (bool $condition, string $message)
+  {
     if (!$condition) {
       throw new \InvalidArgumentException($message);
     }
@@ -22,7 +23,8 @@ class Precondition
    *
    * @param string $name the value's name. If assigned, it is used to explain an error message.
    */
-  static function requireNotNull($value, string $name = null) {
+  static function requireNotNull($value, string $name = null)
+  {
     if ($value !== null) {
       return;
     }

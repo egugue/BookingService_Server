@@ -1,9 +1,9 @@
 <?php
 
-namespace Egugue\BookingSerivce\CheckingService\Data\Web;
+namespace Egugue\BookingSerivce\CheckBooking\Data\Web;
 
 
-use Egugue\BookingSerivce\CheckingService\Model\Teacher\TeacherId;
+use Egugue\BookingSerivce\CheckBooking\Model\Teacher\TeacherId;
 
 require_once __DIR__ . "/LessonPageParser.php";
 require_once __DIR__ . "/HtmlFetcher.php";

@@ -1,12 +1,12 @@
 <?php
 
-namespace Egugue\BookingSerivce\CheckingService\Data\Db;
+namespace Egugue\BookingSerivce\CheckBooking\Data\Db;
 
-use Egugue\BookingSerivce\CheckingService\Model\Lesson\Lesson;
-use Egugue\BookingSerivce\CheckingService\Model\Lesson\LessonList;
-use Egugue\BookingSerivce\CheckingService\Model\Lesson\Status;
-use Egugue\BookingSerivce\CheckingService\Model\Teacher\TeacherId;
-use Egugue\BookingSerivce\CheckingService\SecretConst;
+use Egugue\BookingSerivce\CheckBooking\Model\Lesson\Lesson;
+use Egugue\BookingSerivce\CheckBooking\Model\Lesson\LessonList;
+use Egugue\BookingSerivce\CheckBooking\Model\Lesson\Status;
+use Egugue\BookingSerivce\CheckBooking\Model\Teacher\TeacherId;
+use Egugue\BookingSerivce\CheckBooking\SecretConst;
 use Exception;
 use PDO;
 use PDOException;

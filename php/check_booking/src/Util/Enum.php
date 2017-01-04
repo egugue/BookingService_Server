@@ -1,6 +1,6 @@
 <?php
 
-namespace Egugue\BookingSerivce\CheckingService;
+namespace Egugue\BookingSerivce\CheckBooking\Util;
 
 use InvalidArgumentException;
 use ReflectionObject;

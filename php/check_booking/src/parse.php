@@ -1,10 +1,10 @@
 <?php
 
-use Egugue\BookingSerivce\CheckingService\Data\Db\LessonsDbDao;
-use Egugue\BookingSerivce\CheckingService\Model\Lesson\Lesson;
-use Egugue\BookingSerivce\CheckingService\Model\Lesson\LessonList;
-use Egugue\BookingSerivce\CheckingService\Model\Lesson\Status;
-use Egugue\BookingSerivce\CheckingService\Model\Teacher\TeacherId;
+use Egugue\BookingSerivce\CheckBooking\Data\Db\LessonsDbDao;
+use Egugue\BookingSerivce\CheckBooking\Model\Lesson\Lesson;
+use Egugue\BookingSerivce\CheckBooking\Model\Lesson\LessonList;
+use Egugue\BookingSerivce\CheckBooking\Model\Lesson\Status;
+use Egugue\BookingSerivce\CheckBooking\Model\Teacher\TeacherId;
 
 //TODO: Delete the following
 ini_set('display_errors', 1);
