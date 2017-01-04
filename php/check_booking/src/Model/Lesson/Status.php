@@ -40,13 +40,13 @@ final class Status extends Enum
   public static function from(string $bookingText): Status
   {
     if ($bookingText === "") {
-      return self::UNASSIGNED;
+      return self::UNASSIGNED();
     } else if ($bookingText === "予約済") {
-      return self::RESERVED;
+      return self::RESERVED();
     } else if ($bookingText === "予約可") {
-      return self::AVAILABLE;
+      return self::AVAILABLE();
     } else if ($bookingText === "終了") {
-      return self::FINISHED;
+      return self::FINISHED();
     }
 
     throw new InvalidArgumentException("Unexpected bookingText: {$bookingText}");
