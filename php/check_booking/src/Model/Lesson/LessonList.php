@@ -35,7 +35,7 @@ class LessonList implements IteratorAggregate
       }
     }
 
-    usort($list, "LessonList_sortAscByTimestamp");
+    usort($list, __NAMESPACE__.'\LessonList_sortAscByTimestamp');
     $this->list = $list;
   }
 
@@ -56,6 +56,16 @@ class LessonList implements IteratorAggregate
   function size(): int
   {
     return count($this->list);
+  }
+
+  function hasChildAt(int $index): bool {
+    return isset($this->list[$index]);
+  }
+
+  function childAt(int $index): Lesson {
+    Precondition::require($index >= 0, "index must be a positive integer.");
+    Precondition::require($index <= $this->size(), "index must be within this size({$this->size()}.");
+    return $this->list[$index];
   }
 
   function getIterator()
