@@ -28,7 +28,6 @@ class StudentFirebaseDao
    */
   function getAll(): array
   {
-    var_dump("fadafs");
     $json = $this->client->get("users");
     $students = json_decode($json, true);
 
