@@ -1,6 +1,8 @@
 <?php
 
 use Egugue\BookingSerivce\CheckBooking\Data\Db\LessonsDbDao;
+use Egugue\BookingSerivce\CheckBooking\Data\Firebase\StudentFirebaseDao;
+use Egugue\BookingSerivce\CheckBooking\Data\Push\Notification;
 use Egugue\BookingSerivce\CheckBooking\Data\Web\LessonPageClient;
 use Egugue\BookingSerivce\CheckBooking\Model\Lesson\Lesson;
 use Egugue\BookingSerivce\CheckBooking\Model\Lesson\LessonList;
@@ -10,17 +12,19 @@ use Egugue\BookingSerivce\CheckBooking\Model\Lesson\Status;
 use Egugue\BookingSerivce\CheckBooking\Model\Teacher\TeacherId;
 
 //TODO: Delete the following
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
+require_once("./initialize.php");
 
-require_once('./Data/Web/LessonPageClient.php');
-require_once('./Data/Db/LessonsDbDao.php');
+$action = new CheckBookingAction();
+$action->execute();
 
-require_once('./Model/Teacher/TeacherId.php');
-require_once('./Model/Lesson/Lesson.php');
-require_once('./Model/Lesson/LessonList.php');
-require_once('./Model/Lesson/LessonListRepository.php');
-require_once('./Model/Lesson/LessonService.php');
+/*
+$notification = new Notification();
+$notification->foo();
+*/
+/*
+$dao = new StudentFirebaseDao();
+var_dump($dao->getAll());
+*/
 
 /*
 TODO
@@ -82,4 +86,3 @@ foreach($lessonList as $Lesson) {
     var_dump($Lesson);
 }
 */
-exit;
