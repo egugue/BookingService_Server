@@ -1,8 +1,7 @@
-package com.egugue.debooker.application.controller
+package com.egugue.debooker.application.controller.teacher
 
 import javax.inject.{Inject, Singleton}
 
-import com.egugue.debooker.application.controller.teacher.TeacherJson
 import play.api.libs.json.Json
 import play.api.mvc._
 
