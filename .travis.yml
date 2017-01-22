@@ -6,7 +6,8 @@ env:
 
 before_script: 
   - cd scala/de_booker
-  - wget http://download.playframework.org/releases/play-${PLAY_VERSION}.zip
+  #- wget http://download.playframework.org/releases/play-${PLAY_VERSION}.zip
+  - wget https://downloads.typesafe.com/play/${PLAY_VERSION}/play-${PLAY_VERSION}.zip
   #- wget https://github.com/playframework/playframework/archive/${PLAY_VERSION}.zip
   #- wget https://github.com/playframework/playframework/archive/${PLAY_VERSION}.zip -P scala/de_booker/
   #- unzip -q playframework-${PLAY_VERSION}.zip 
