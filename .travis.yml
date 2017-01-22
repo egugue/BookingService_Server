@@ -13,7 +13,6 @@ before_script:
   - unzip -q ${PLAY_VERSION}.zip 
 
 script: 
-  - cd scala/de_booker
   - play-${PLAY_VERSION}/play test
 
 notifications:
