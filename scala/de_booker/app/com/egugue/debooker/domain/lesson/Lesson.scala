@@ -3,7 +3,7 @@ package com.egugue.debooker.domain.lesson
 import com.egugue.debooker.domain.teacher.TeacherId
 
 /**
-  * Created by htoyama on 2017/01/22.
+  * Representing a lesson.
   */
 case class Lesson
 (
