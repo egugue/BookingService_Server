@@ -4,8 +4,6 @@
 # ~~~~
 
 # An example controller showing a sample home page
-GET     /                           controllers.HomeController.index
-
 GET     /teacher/:id                com.egugue.debooker.application.controller.TeacherController.get(id: Long)
 
 # Map static resources from the /public folder to the /assets URL path
