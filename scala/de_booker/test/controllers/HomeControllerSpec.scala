@@ -12,6 +12,7 @@ import play.api.test.Helpers._
  */
 class HomeControllerSpec extends PlaySpec with OneAppPerTest {
 
+  /*
   "HomeController GET" should {
 
     "render the index page from a new instance of controller" in {
@@ -42,4 +43,5 @@ class HomeControllerSpec extends PlaySpec with OneAppPerTest {
       contentAsString(home) must include ("Welcome to Play")
     }
   }
+  */
 }
