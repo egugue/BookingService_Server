@@ -17,7 +17,7 @@ object Status {
 
   case object Available extends Status("available")
 
-  val values = Array(Reserved, Finished, Unassigned, Cancelled, Available)
+  val values:Seq[Status] = Seq(Reserved, Finished, Unassigned, Cancelled, Available)
 
   /**
     * Retrieve a status of the given value.
