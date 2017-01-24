@@ -1,5 +1,7 @@
 package com.egugue.debooker.domain.lesson
 
+import java.time.LocalDateTime
+
 import com.egugue.debooker.domain.teacher.TeacherId
 
 /**
@@ -8,8 +10,6 @@ import com.egugue.debooker.domain.teacher.TeacherId
 case class Lesson
 (
   teacherId: TeacherId,
-  time: Int,
+  time: LocalDateTime,
   status: Status
-) {
-  require(time > 0, "time must be positive integer")
-}
+)
